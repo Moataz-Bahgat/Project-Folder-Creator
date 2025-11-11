@@ -1,5 +1,6 @@
 # Project-Folder-Creator
 Automated project folder creation tool with customizable subdirectories and integrated Bill of Materials (BOM) template copying
+---
 
 ## ✨ Features
 
@@ -22,9 +23,27 @@ To run this script, you only need Python and the template file properly placed.
 
 ### 🚀 How to Run
 
-1.  **Save the Script:** Save the provided Python code as `project_creator.py`.
-2.  **Place the Template:** Ensure your Bill of Materials template (`BOM template.xls`) is in the **same location** as the script.
-3.  **Execute:** Run the script from your terminal or command prompt:
+There are two ways to launch the Project Creator:
+
+#### Option 1: Using the Batch File (Recommended)
+
+1.  **Create the Batch File:** Save your batch code as a file named `Run_Creator.bat` (or similar) in the same directory as the Python script.
+2.  **Edit the Path:** You must **update the path** in the batch file to reflect the location where the user saves the script.
+3.  **Double-Click:** Simply double-click the `.bat` file to run the application. The `pause` command ensures the window stays open after execution, which is helpful for troubleshooting.
+
+    **Example Batch File (`Run_Creator.bat`):**
+    ```batch
+    @echo off
+    python "C:\Users\moata\Desktop\Project Template creator\ProjectFolderCreator4.py"
+    pause
+    ```
+    > **Note:** Remember to instruct users to modify the path (`C:\Users\moata\Desktop\...\`) to their own save location.
+
+#### Option 2: Direct Command Line
+
+1.  **Save & Place Files:** Save the Python code as `project_creator.py` and place `BOM template.xls` in the same directory.
+2.  **Navigate:** Open your terminal/command prompt and navigate to the directory where you saved the files.
+3.  **Execute:** Run the script using the Python interpreter:
 
     ```bash
     python project_creator.py
@@ -67,4 +86,4 @@ The configuration block in `project_creator.py` looks like this:
 TEMPLATE_FILENAME = "BOM template.xls"
 # Define the available subfolders (without numbering)
 DEFAULT_SUBFOLDERS = ["CAD Files", "PDF", "DXF", "Bill of Material", "Other"]
-# ---------------------
+# -------------------
