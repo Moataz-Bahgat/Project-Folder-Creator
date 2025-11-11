@@ -74,7 +74,7 @@ def browse_folder():
 
 # --- GUI Setup ---
 root = tk.Tk()
-root.title("Project Template by Eng. Moataz-Bahgat")
+root.title("Project-Folder-Creator by Eng. Moataz-Bahgat")
 root.geometry("450x380")
 root.resizable(False, False)
 
@@ -112,3 +112,4 @@ for folder_name in DEFAULT_SUBFOLDERS:
 tk.Button(root, text="Create Selected Project Structure", command=create_folders, bg="#0078D7", fg="white", height=2).pack(padx=10, pady=15, fill="x")
 
 root.mainloop()
+
