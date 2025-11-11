@@ -1,5 +1,8 @@
 # Project-Folder-Creator
 Automated project folder creation tool with customizable subdirectories and integrated Bill of Materials (BOM) template.
+
+<img width="608" height="546" alt="image" src="https://github.com/user-attachments/assets/51fe17bb-c216-4475-b99e-cd64b0cf3446" />
+
 ---
 
 ## ✨ Features
